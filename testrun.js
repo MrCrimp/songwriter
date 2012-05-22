@@ -1,5 +1,7 @@
-describe(function () {
-	it("should run tests on Travis", function() {
-	  	expect(true).toBe(true);
-	});
+
+module('app', {
+});
+
+test("should run tests on CI", function() {
+  	equal(true,true,"never fails");
 });
