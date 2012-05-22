@@ -1,6 +1,3 @@
-require 'bundler/setup'
-require 'rake-pipeline'
-
 class NoCache
   def initialize(app)
     @app = app
