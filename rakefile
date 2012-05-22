@@ -1,5 +1,5 @@
-desc "Run tests with phantomjs"
-task :test do
+desc "Run jasmine tests with phantomjs"
+task :xtest do
   ["rake jasmine:ci"].each do |cmd|
     puts "Starting to run #{cmd}..."
     system("export DISPLAY=:99.0 && bundle exec #{cmd}")
