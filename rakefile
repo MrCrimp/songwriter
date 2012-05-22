@@ -1,4 +1,5 @@
-task :travis do
+desc "Run tests with phantomjs"
+task :test do
   ["rake jasmine:ci"].each do |cmd|
     puts "Starting to run #{cmd}..."
     system("export DISPLAY=:99.0 && bundle exec #{cmd}")
