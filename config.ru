@@ -1,6 +1,5 @@
 require 'bundler/setup'
 require 'rake-pipeline'
-require 'rake-pipeline/middleware'
 
 class NoCache
   def initialize(app)
@@ -15,5 +14,4 @@ class NoCache
 end
 
 use NoCache
-use Rake::Pipeline::Middleware, "Assetfile"
 run Rack::Directory.new('.')
