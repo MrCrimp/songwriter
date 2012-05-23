@@ -5,5 +5,5 @@ before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
   - exec rackup &
-  - sleep 10
-script: phantomjs qunit/run-qunit.js "http://localhost:9292/index.html?package=all" && "rake jasmine:ci"
+  - sleep 6
+script: phantomjs qunit/run-qunit.js "http://localhost:9292/index.html?package=all" && "bundle exec rake jasmine:ci"
