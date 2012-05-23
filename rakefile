@@ -1,3 +1,5 @@
+#!/usr/bin/env rake
+
 desc "Run jasmine tests with phantomjs"
 task :xtest do
   ["rake jasmine:ci"].each do |cmd|
