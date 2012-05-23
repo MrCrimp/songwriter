@@ -6,4 +6,4 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
   - exec rackup &
   - sleep 6
-script: phantomjs qunit/run-qunit.js "http://localhost:9292/index.html?package=all" && "RAILS_ENV=test bundle exec rake test:ci --trace" && "rake jasmine:headless"
+script: phantomjs qunit/run-qunit.js "http://localhost:9292/index.html?package=all" && "xvfb-run rake jasmine:headless testrun.js" # && "RAILS_ENV=test bundle exec rake test:ci --trace" && 
