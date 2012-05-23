@@ -1,0 +1,10 @@
+src_files:
+  - "**/*.{js,coffee}"
+  - "**/*.{js,coffee}"
+  - "**/*.{js,coffee}"
+helpers:
+  - "helpers/**/*.{js,coffee}"
+spec_files:
+  - "**/*[Ss]pec.{js,coffee}"
+src_dir:
+spec_dir: 
